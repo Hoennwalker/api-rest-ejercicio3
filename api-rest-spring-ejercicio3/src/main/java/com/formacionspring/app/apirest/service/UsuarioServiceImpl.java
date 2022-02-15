@@ -16,13 +16,13 @@ public class UsuarioServiceImpl implements UsuarioService
 	private UsuariosDao usuarioDao;
 
 	@Override
-	public Usuarios login(Usuarios usuario) {
+	public List<Usuarios> findAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Usuarios> findAll() {
+	public Usuarios login(String usuarioPost, String contraseña) {
 		// TODO Auto-generated method stub
 		return null;
 	}
