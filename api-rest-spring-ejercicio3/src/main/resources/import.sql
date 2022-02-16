@@ -13,5 +13,15 @@ INSERT INTO jefes(dni,nombre,salario,telefono,departamento_id) VALUES ("11122234
 INSERT INTO jefes(dni,nombre,salario,telefono,departamento_id) VALUES ("11122234U","Jose",1200,666773,1);
 INSERT INTO jefes(dni,nombre,salario,telefono,departamento_id) VALUES ("11122234E","Jose",1200,666774,3);
 
-INSERT INTO usuarios(usuario_id,nombre,contraseña) VALUES (1,"Jose","hola");
-INSERT INTO usuarios(usuario_id,nombre,contraseña) VALUES (2,"Jose","adios");
+INSERT INTO usuario(usuario_id,nombre,contraseña) VALUES (1,"Jose","hola");
+INSERT INTO usuario(usuario_id,nombre,contraseña) VALUES (2,"Jose","adios");
+
+INSERT INTO usuarios (username,password,enabled) VALUES ('rolando','$2a$10$VTMecMi.QwIynlpyuBHAAenhz9Wg2fEk4VbaOlXn.2xKkCJTMf75u',1);
+INSERT INTO usuarios (username,password,enabled) VALUES ('admin','$2a$10$nSgo1TPH4IQRro7HkVqrBO.cNC1cXrW5Xyhs5u/NwkjeEUh9Bo65G',1);
+
+INSERT INTO roles (nombre) VALUES('ROLE_USER');
+INSERT INTO roles (nombre) VALUES('ROLE_ADMIN');
+
+INSERT INTO usuarios_roles (usuario_id,role_id) VALUES(1,1);
+INSERT INTO usuarios_roles (usuario_id,role_id) VALUES(2,2);
+INSERT INTO usuarios_roles (usuario_id,role_id) VALUES(2,1);
